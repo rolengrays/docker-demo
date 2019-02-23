@@ -12,7 +12,7 @@ docker run \
   --net demonet \
   --network-alias base.rolengrays.org \
   --privileged \
-  --volume ~/work/container:/mnt/host \
+  --volume ~/container:/mnt/host \
   base:1.0 \
   /sbin/init
 ```
