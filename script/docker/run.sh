@@ -8,6 +8,6 @@ docker run \
   --net demonet \
   --network-alias $1.rolengrays.org \
   --privileged \
-  --volume ~/work/container:/mnt/host \
+  --volume ~/container:/mnt/host \
   $1:$2 \
   /sbin/init
