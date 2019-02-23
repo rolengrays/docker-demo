@@ -1,7 +1,6 @@
 #!/bin/bash
 # $1 name
-# $2 mejor-version
-# $3 minor-version
+# $2 version
 docker run \
   -itd \
   --name $1 \
@@ -10,5 +9,5 @@ docker run \
   --network-alias $1.rolengrays.org \
   --privileged \
   --volume ~/work/container:/mnt/host \
-  $1:$2.$3 \
+  $1:$2 \
   /sbin/init
