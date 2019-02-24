@@ -27,3 +27,6 @@ RUN rbenv global 2.5.3
 
 # serverspecインストール
 RUN gem install serverspec
+
+# spec_helper
+COPY ./files/spec_helper.rb /root/spec_helper.rb
